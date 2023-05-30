@@ -11,7 +11,7 @@
     <th>Gender</th>
   </thead>
   <tbody>
-    <tr *ngFor="let user of users; let i= index ; let iseven = even" [style.backgroundColor]="iseven?'#F3BCC8':'#ccc'" >
+    <tr *ngFor="let user of homeUsers; let i= index ; let iseven = even" [style.backgroundColor]="iseven?'#F3BCC8':'#ccc'" >
       <!-- <td>{{i}}</td> -->
       <td>{{i}}</td>
       <td>{{user.name}}</td>

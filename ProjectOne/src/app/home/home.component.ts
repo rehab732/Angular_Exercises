@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { User } from '../user';
+import { UsersService } from '../users.service';
 
 @Component({
   selector: 'app-home',
@@ -10,17 +11,10 @@ export class HomeComponent {
 
 name:string="Mahmoud"
 
-  users:User[]=[
-    {name:"Rehab",age:23,gender:"Female"},
-    {name:"7oda",age:24,gender:"Male"},
-    {name:"menna",age:23,gender:"Female"},
-    {name:"noor",age:23,gender:"Female"},
-    {name:"rahma",age:23,gender:"Female"},
-    {name:"Ahmed",age:23,gender:"Male"},
-
-  ]
-
-
+homeUsers:User[]=[];
+constructor(_x:UsersService){
+  this.homeUsers  =_x.users;
+}
    userName:string="Rehab Mohamed";
    age:number=23;
    price:number=100;

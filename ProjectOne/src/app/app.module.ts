@@ -6,6 +6,11 @@ import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { WebComponent } from './web/web.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +18,12 @@ import { GalleryComponent } from './gallery/gallery.component';
     HomeComponent,
     ContactsComponent,
     AboutComponent,
-    GalleryComponent
+    GalleryComponent,
+    NotfoundComponent,
+    NavbarComponent,
+    WebComponent,
+    MobileComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
