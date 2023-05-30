@@ -12,6 +12,7 @@ import { WebComponent } from './web/web.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FormsModule } from '@angular/forms';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     WebComponent,
     MobileComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

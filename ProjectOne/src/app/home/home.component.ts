@@ -8,7 +8,7 @@ import { UsersService } from '../users.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+fromparent:string='Ra7oba from parent';
 name:string="Mahmoud"
 twobinding:string='';
 homeUsers:User[]=[];
