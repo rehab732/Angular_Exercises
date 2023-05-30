@@ -1,0 +1,39 @@
+<!-- <h2 class="text-center fas fa-home">home works!</h2>
+<h2 class="text-center">{{userName}}</h2>
+<h3>My Age :{{age}}</h3> -->
+
+
+<table class="table">
+  <thead>
+    <th>Index</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; let i= index ; let iseven = even" [style.backgroundColor]="iseven?'#F3BCC8':'#ccc'" >
+      <!-- <td>{{i}}</td> -->
+      <td>{{i}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.age}}</td>
+      <td>{{user.gender}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div [ngSwitch]="name">
+<h1 *ngSwitchCase="'Rehab'" [ngClass]="
+{
+  'text-center bg-danger': price==100
+}" >
+Welcom Rehab
+</h1>
+<h1 *ngSwitchCase="'Mahmoud'" [ngStyle]="{'color': price==100?'red':''}" >
+Welcom 7oda
+</h1>
+<h1 *ngSwitchDefault>
+hello
+</h1>
+</div>
+
+
