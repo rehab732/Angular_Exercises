@@ -1,1 +1,13 @@
-<p>contacts works!</p>
+<div class="row">
+  <div class="col-md-3" *ngFor="let article of myarticles">
+    <div class="article">
+      <img class="w-100" [src]="article.urlToImage" alt=""/>
+      <h2>{{article.title}}</h2>
+      <p>{{article.description}}</p>
+      <span class=" p-2 bg-danger text-white" >{{article.author}}</span>
+
+
+    </div>
+
+  </div>
+</div>

@@ -13,7 +13,7 @@ import { MobileComponent } from './mobile/mobile.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FormsModule } from '@angular/forms';
 import { SliderComponent } from './slider/slider.component';
-
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +31,8 @@ import { SliderComponent } from './slider/slider.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
