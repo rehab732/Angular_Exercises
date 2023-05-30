@@ -10,7 +10,7 @@ import { UsersService } from '../users.service';
 export class HomeComponent {
 
 name:string="Mahmoud"
-
+twobinding:string='';
 homeUsers:User[]=[];
 constructor(_x:UsersService){
   this.homeUsers  =_x.users;
